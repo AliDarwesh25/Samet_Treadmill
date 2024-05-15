@@ -1,1 +1,1 @@
-# Samet_Treadmill
+# Smart_Treadmill
