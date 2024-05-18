@@ -70,11 +70,11 @@ void INT0_init(void){
 }
 void INT2_init(void){
   GICR   |= (1<<INT2);//enable INT2
-  MCUCSR |= ((1<<ISC2));//rising edge of INT0
+  MCUCSR |= ((1<<ISC2));//rising edge of INT2
   SREG   |=(1<<7);//enable interrupt
 }
 void INT1_init(void){
-  MCUCR |= (1 << ISC11); //falling edge of INT0
+  MCUCR |= (1 << ISC11); //falling edge of INT1
   GICR |= (1 << INT1);//enable INT1
   SREG |= (1 << 7);//enable interrupt
 }
